@@ -31,8 +31,9 @@ namespace Calloatti.DepthMonitor
     private Label _thresholdOffLabel;
     private PreciseSlider _thresholdOffSlider;
 
-    private readonly Phrase _measurementPhrase = Phrase.New("Automation.Measurement").Format<float>(UnitFormatter.FormatDistance);
-    private readonly Phrase _thresholdPhrase = Phrase.New("Automation.Threshold").Format<float>(UnitFormatter.FormatDistance);
+    // FIX: Updated to use the new extension method syntax for current Timberborn UIFormatters
+    private readonly Phrase _measurementPhrase = Phrase.New("Automation.Measurement").FormatDistance<float>();
+    private readonly Phrase _thresholdPhrase = Phrase.New("Automation.Threshold").FormatDistance<float>();
 
     public DepthMonitorFragment(VisualElementLoader visualElementLoader, ILoc loc)
     {
