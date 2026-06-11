@@ -11,7 +11,8 @@ using UnityEngine;
 
 namespace Calloatti.DepthMonitor
 {
-  public class DepthMonitor : BaseComponent, IAwakableComponent, IInitializableEntity, IStartableComponent, IPersistentEntity, IDuplicable<DepthMonitor>, IDuplicable, ISamplingTransmitter, ITransmitter
+  // MINIMAL 1.1 FIX: Removed ONLY the deleted 'IStartableComponent' interface. Left everything else exactly as you wrote it.
+  public class DepthMonitor : BaseComponent, IAwakableComponent, IInitializableEntity, IPersistentEntity, IDuplicable<DepthMonitor>, IDuplicable, ISamplingTransmitter, ITransmitter
   {
     private static readonly ComponentKey DepthMonitorKey = new ComponentKey("DepthMonitor");
 
