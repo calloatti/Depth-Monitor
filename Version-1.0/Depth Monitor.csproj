@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>depthmonitor</AssemblyName>
+    <RootNamespace>Calloatti.DepthMonitor</RootNamespace>
+  </PropertyGroup>
+
+  <Import Project="CommonModSettings.props" />
+
+  <ItemGroup>
+    <Publicize Remove="Timberborn.BlueprintSystem" />
+  </ItemGroup>
+
+</Project>

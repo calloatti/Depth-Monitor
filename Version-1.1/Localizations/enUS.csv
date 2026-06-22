@@ -1,0 +1,5 @@
+ID,Text,Comment
+Building.DepthMonitor.DisplayName,"Depth Monitor",
+Building.DepthMonitor.Description,"Measures the water depth and sends an automation signal based on a low and high threshold.",
+Building.DepthMonitor.TurnOnIf,"Turn ON if depth is ≤",
+Building.DepthMonitor.TurnOffIf,"Turn OFF if depth is ≥",
