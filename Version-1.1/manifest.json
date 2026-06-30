@@ -1,6 +1,6 @@
 {
     "Name": "Depth Monitor",
-    "Version": "1.0.2",
+    "Version": "1.0.3",
     "Id": "Calloatti.DepthMonitor",
     "MinimumGameVersion": "1.1.0.0",
     "Description": "Monitors depth levels to trigger automation signals based on configurable min-max thresholds.",
