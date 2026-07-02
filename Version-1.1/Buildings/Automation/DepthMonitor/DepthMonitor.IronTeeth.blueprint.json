@@ -1,13 +1,28 @@
-{
+﻿{
   "BuildingSpec": {
     "SelectionSoundName": "Automation",
     "LoopingSoundName": "",
     "BuildingCost": [
-      { "Id": "Plank", "Amount": 8 },
-      { "Id": "Gear", "Amount": 8 },
-      { "Id": "MetalPart", "Amount": 2 },
-      { "Id": "MetalBlock", "Amount": 1 },
-      { "Id": "Extract", "Amount": 1}
+      {
+        "Id": "Plank",
+        "Amount": 8
+      },
+      {
+        "Id": "Gear",
+        "Amount": 8
+      },
+      {
+        "Id": "MetalPart",
+        "Amount": 2
+      },
+      {
+        "Id": "MetalBlock",
+        "Amount": 1
+      },
+      {
+        "Id": "Extract",
+        "Amount": 1
+      }
     ],
     "ScienceCost": 1250,
     "PlaceFinished": false,

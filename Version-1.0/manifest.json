@@ -1,9 +1,9 @@
-{
-    "Name": "Depth Monitor",
-    "Version": "1.0.3",
-    "Id": "Calloatti.DepthMonitor",
-    "MinimumGameVersion": "1.0.12.9",
-    "Description": "Monitors depth levels to trigger automation signals based on configurable min-max thresholds.",
-    "RequiredMods": [],
-    "OptionalMods": []
+﻿{
+  "Name": "Depth Monitor",
+  "Version": "1.0.3",
+  "Id": "Calloatti.DepthMonitor",
+  "MinimumGameVersion": "1.0.12.9",
+  "Description": "Monitors depth levels to trigger automation signals based on configurable min-max thresholds.",
+  "RequiredMods": [],
+  "OptionalMods": []
 }
