@@ -1,0 +1,5 @@
+ID,Text,Comment
+Building.DepthMonitor.DisplayName,"Tiefenmonitor",
+Building.DepthMonitor.Description,"Misst die Wassertiefe und sendet ein Automatisierungssignal basierend auf einem unteren und oberen Schwellenwert.",
+Building.DepthMonitor.TurnOnIf,"EINSCHALTEN wenn Tiefe ≤",
+Building.DepthMonitor.TurnOffIf,"AUSSCHALTEN wenn Tiefe ≥",

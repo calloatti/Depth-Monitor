@@ -1,0 +1,5 @@
+ID,Text,Comment
+Building.DepthMonitor.DisplayName,"수심 모니터",
+Building.DepthMonitor.Description,"수심을 측정하고 낮은 임계값과 높은 임계값에 따라 자동화 신호를 보냅니다.",
+Building.DepthMonitor.TurnOnIf,"수심 ≤ 이면 켜기",
+Building.DepthMonitor.TurnOffIf,"수심 ≥ 이면 끄기",

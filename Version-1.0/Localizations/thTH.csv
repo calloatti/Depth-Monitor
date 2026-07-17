@@ -1,0 +1,5 @@
+ID,Text,Comment
+Building.DepthMonitor.DisplayName,"เครื่องวัดความลึก",
+Building.DepthMonitor.Description,"วัดความลึกของน้ำและส่งสัญญาณอัตโนมัติตามเกณฑ์ต่ำและสูง",
+Building.DepthMonitor.TurnOnIf,"เปิดถ้าความลึก ≤",
+Building.DepthMonitor.TurnOffIf,"ปิดถ้าความลึก ≥",

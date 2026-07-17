@@ -1,0 +1,5 @@
+ID,Text,Comment
+Building.DepthMonitor.DisplayName,"深度モニター",
+Building.DepthMonitor.Description,"水深を測定し、低しきい値と高しきい値に基づいて自動化信号を送信します。",
+Building.DepthMonitor.TurnOnIf,"深度 ≤ でオン",
+Building.DepthMonitor.TurnOffIf,"深度 ≥ でオフ",

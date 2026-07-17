@@ -1,0 +1,5 @@
+ID,Text,Comment
+Building.DepthMonitor.DisplayName,"Монітор глибини",
+Building.DepthMonitor.Description,"Вимірює глибину води та надсилає сигнал автоматизації на основі низького та високого порогів.",
+Building.DepthMonitor.TurnOnIf,"УВІМКНУТИ якщо глибина ≤",
+Building.DepthMonitor.TurnOffIf,"ВИМКНУТИ якщо глибина ≥",

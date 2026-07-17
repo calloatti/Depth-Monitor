@@ -1,0 +1,5 @@
+ID,Text,Comment
+Building.DepthMonitor.DisplayName,"Monitor de profundidade",
+Building.DepthMonitor.Description,"Mede a profundidade da água e envia um sinal de automação baseado em um limite baixo e alto.",
+Building.DepthMonitor.TurnOnIf,"LIGAR se profundidade ≤",
+Building.DepthMonitor.TurnOffIf,"DESLIGAR se profundidade ≥",

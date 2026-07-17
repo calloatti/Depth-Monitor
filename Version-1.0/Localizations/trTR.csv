@@ -1,0 +1,5 @@
+ID,Text,Comment
+Building.DepthMonitor.DisplayName,"Derinlik Monitörü",
+Building.DepthMonitor.Description,"Su derinliğini ölçer ve düşük ve yüksek eşik değerine göre bir otomasyon sinyali gönderir.",
+Building.DepthMonitor.TurnOnIf,"Derinlik ≤ ise AÇ",
+Building.DepthMonitor.TurnOffIf,"Derinlik ≥ ise KAPAT",

@@ -1,0 +1,5 @@
+ID,Text,Comment
+Building.DepthMonitor.DisplayName,"Monitor głębokości",
+Building.DepthMonitor.Description,"Mierzy głębokość wody i wysyła sygnał automatyzacji na podstawie niskiego i wysokiego progu.",
+Building.DepthMonitor.TurnOnIf,"WŁĄCZ jeśli głębokość ≤",
+Building.DepthMonitor.TurnOffIf,"WYŁĄCZ jeśli głębokość ≥",
