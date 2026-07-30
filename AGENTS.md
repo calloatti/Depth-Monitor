@@ -1,0 +1,28 @@
+Include ..\AGENTS.md
+
+# Depth Monitor — Mod-Specific Agent Instructions
+
+## Identity
+- **Assembly:** `depthmonitor`
+- **Namespace:** `Calloatti.DepthMonitor`
+- **ModId:** `Calloatti.DepthMonitor`
+- **Framework:** Bindito DI
+- **Publicizer:** removes `Timberborn.BlueprintSystem`
+- **Min Game Version:** 1.0.12.9 — uses `timberborn-decompiled-1.0.*`
+
+## What This Mod Does
+Adds a depth monitor building that displays water depth information. Includes marker placement on water tiles with a custom entity panel fragment for data display.
+
+## Source Architecture (`Version-1.0/Source/`)
+
+| File | Role |
+|---|---|
+| `DepthMonitor.cs` | Core depth monitor component |
+| `DepthMonitorConfigurator.cs` | DI configurator |
+| `DepthMonitorFragment.cs` | Entity panel UI fragment |
+| `DepthMonitorMarker.cs` | Marker component for monitored tiles |
+| `DepthMonitorSpec.cs` | ComponentSpec record |
+
+## Version Folders
+- `Version-1.0` — targets game 1.0.x.x
+- `Version-1.1` — targets game 1.1.x.x
