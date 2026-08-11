@@ -65,7 +65,7 @@
     "DisplayNameLocKey": "Building.DepthMonitor.DisplayName",
     "DescriptionLocKey": "Building.DepthMonitor.Description",
     "FlavorDescriptionLocKey": "",
-    "Icon": "Buildings/Automation/DepthSensor/DepthSensorIcon"
+    "Icon": "Buildings/Automation/DepthMonitor/DepthMonitorIcon"
   },
   "ConstructionSiteProgressVisualizerSpec": {"ProgressThresholds": [0]},
   "DepthMonitorSpec": {"SensorCoordinates": {"X": 0, "Y": 1, "Z": 0}, "SensorHeightOffset": 0.5},

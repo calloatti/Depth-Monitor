@@ -3,16 +3,14 @@
   <PropertyGroup>
     <AssemblyName>depthmonitor</AssemblyName>
     <RootNamespace>Calloatti.DepthMonitor</RootNamespace>
-  </PropertyGroup>
-
-  <Import Project="CommonModSettings.props" />
-  
-  <PropertyGroup>
     <TimberbornPath>C:\Program Files (x86)\Steam\steamapps\common\timberborn_experimental\Timberborn_Data\Managed</TimberbornPath>
   </PropertyGroup>
 
+  <Import Project="CommonModSettings.props" />
+
   <ItemGroup>
-    <Publicize Remove="Timberborn.BlueprintSystem" />
+    <DoNotPublicize Include="Timberborn.BlueprintSystem:Timberborn.BlueprintSystem.ComponentSpec.EqualityContract" />
+    <DoNotPublicize Include="Timberborn.BlueprintSystem:Timberborn.BlueprintSystem.ComponentSpec.PrintMembers" />
   </ItemGroup>
 
 </Project>

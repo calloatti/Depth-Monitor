@@ -7,7 +7,7 @@ Include ..\AGENTS.md
 - **Namespace:** `Calloatti.DepthMonitor`
 - **ModId:** `Calloatti.DepthMonitor`
 - **Framework:** Bindito DI
-- **Publicizer:** removes `Timberborn.BlueprintSystem`
+- **Publicizer:** `Timberborn.BlueprintSystem` is publicized via `CommonModSettings.props`, with `DoNotPublicize` for `ComponentSpec.EqualityContract`/`PrintMembers` (record-inheritance CS0507 fix — see csproj)
 - **Min Game Version:** 1.0.12.9 — uses `timberborn-decompiled-1.0.*`
 
 ## What This Mod Does
