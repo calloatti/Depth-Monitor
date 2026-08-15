@@ -1,0 +1,1 @@
+Monitors depth levels to trigger automation signals based on configurable min-max thresholds.
