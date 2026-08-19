@@ -12,10 +12,6 @@ namespace Calloatti.DepthMonitor
   {
     private static readonly float ThresholdChangeStep = 0.01f;
 
-    // Custom Localizations Keys
-    private static readonly string TurnOnIfLocKey = "Building.DepthMonitor.TurnOnIf";
-    private static readonly string TurnOffIfLocKey = "Building.DepthMonitor.TurnOffIf";
-
     private readonly VisualElementLoader _visualElementLoader;
     private readonly ILoc _loc;
 
@@ -26,14 +22,21 @@ namespace Calloatti.DepthMonitor
     // ON Controls
     private Label _thresholdOnLabel;
     private PreciseSlider _thresholdOnSlider;
+    private Label _onTitleLabel;
 
     // OFF Controls
     private Label _thresholdOffLabel;
     private PreciseSlider _thresholdOffSlider;
+    private Label _offTitleLabel;
+
+    // Localization keys for titles
+    private static readonly string TurnOnIfLocKey = "Building.DepthMonitor.TurnOnIf";
+    private static readonly string TurnOffIfLocKey = "Building.DepthMonitor.TurnOffIf";
 
     // FIX: Updated to use the new extension method syntax for current Timberborn UIFormatters
-    private readonly Phrase _measurementPhrase = Phrase.New("Automation.Measurement").FormatDistance<float>();
-    private readonly Phrase _thresholdPhrase = Phrase.New("Automation.Threshold").FormatDistance<float>();
+    // Added "F2" format to match vanilla precision (2 decimal places)
+    private readonly Phrase _measurementPhrase = Phrase.New("Automation.Measurement").FormatDistance<float>("F2");
+    private readonly Phrase _thresholdPhrase = Phrase.New("Automation.Threshold").FormatDistance<float>("F2");
 
     public DepthMonitorFragment(VisualElementLoader visualElementLoader, ILoc loc)
     {
@@ -43,41 +46,25 @@ namespace Calloatti.DepthMonitor
 
     public VisualElement InitializeFragment()
     {
-      // We load the vanilla fragment as a base, but we will hack out the pieces we don't need and clone the ones we do.
-      _root = _visualElementLoader.LoadVisualElement("Game/EntityPanel/WaterSensorFragment");
+      _root = _visualElementLoader.LoadVisualElement("DepthMonitor/DepthMonitorFragment");
 
       _measurement = _root.Q<Label>("Measurement");
-
-      // Hide the unneeded Comparison dropdown completely
-      var modeDropdown = _root.Q<VisualElement>("Mode");
-      if (modeDropdown != null) modeDropdown.ToggleDisplayStyle(false);
-
-      // 1. Prepare ON Controls (Reusing original slider and label)
-      _thresholdOnLabel = _root.Q<Label>("ThresholdLabel");
-      _thresholdOnSlider = _root.Q<PreciseSlider>("ThresholdSlider");
+      
+      _onTitleLabel = _root.Q<Label>("OnTitle");
+      _onTitleLabel.text = _loc.T(TurnOnIfLocKey);
+      
+      _thresholdOnLabel = _root.Q<Label>("ThresholdOnLabel");
+      _thresholdOnSlider = _root.Q<PreciseSlider>("ThresholdOnSlider");
       _thresholdOnSlider.SetValueChangedCallback(OnThresholdOnChanged);
       _thresholdOnSlider.SetStepWithoutNotify(ThresholdChangeStep);
 
-      var onTitle = new Label(_loc.T(TurnOnIfLocKey));
-      onTitle.AddToClassList("game-text-normal");
-      onTitle.style.marginTop = 10;
-      _root.Insert(_root.IndexOf(_thresholdOnLabel), onTitle);
-
-      // 2. Prepare OFF Controls (Extracting from a new instance of the template)
-      var offTemplate = _visualElementLoader.LoadVisualElement("Game/EntityPanel/WaterSensorFragment");
-
-      _thresholdOffLabel = offTemplate.Q<Label>("ThresholdLabel");
-      _thresholdOffSlider = offTemplate.Q<PreciseSlider>("ThresholdSlider");
+      _offTitleLabel = _root.Q<Label>("OffTitle");
+      _offTitleLabel.text = _loc.T(TurnOffIfLocKey);
+      
+      _thresholdOffLabel = _root.Q<Label>("ThresholdOffLabel");
+      _thresholdOffSlider = _root.Q<PreciseSlider>("ThresholdOffSlider");
       _thresholdOffSlider.SetValueChangedCallback(OnThresholdOffChanged);
       _thresholdOffSlider.SetStepWithoutNotify(ThresholdChangeStep);
-
-      var offTitle = new Label(_loc.T(TurnOffIfLocKey));
-      offTitle.AddToClassList("game-text-normal");
-      offTitle.style.marginTop = 10;
-
-      _root.Add(offTitle);
-      _root.Add(_thresholdOffLabel);
-      _root.Add(_thresholdOffSlider);
 
       _root.ToggleDisplayStyle(false);
       return _root;

@@ -1,5 +1,5 @@
 ID,Text,Comment
-Building.DepthMonitor.DisplayName,"深度监控器",
-Building.DepthMonitor.Description,"测量水深并根据低阈值和高阈值发送自动化信号。",
-Building.DepthMonitor.TurnOnIf,"深度 ≤ 时开启",
-Building.DepthMonitor.TurnOffIf,"深度 ≥ 时关闭",
+Building.DepthMonitor.Description,测量水深并根据低阈值和高阈值发送自动化信号。,
+Building.DepthMonitor.DisplayName,深度监控器,
+Building.DepthMonitor.TurnOffIf,深度 ≥ 时关闭,
+Building.DepthMonitor.TurnOnIf,深度 ≤ 时开启,

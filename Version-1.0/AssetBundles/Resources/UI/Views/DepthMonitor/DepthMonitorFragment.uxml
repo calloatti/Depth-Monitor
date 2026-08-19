@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:cui="Timberborn.CoreUI" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="/Assets/Resources/UI/Views/Core/CoreStyle.uss" />
+    <Style src="/Assets/Resources/UI/Views/Common/CommonStyle.uss" />
+    <Style src="/Assets/Resources/UI/Views/Common/EntityPanel/EntityPanelCommonStyle.uss" />
+    <Style src="/Assets/Resources/UI/Views/Game/EntityPanel/EntityPanelGameStyle.uss" />
+
+    <cui:NineSliceVisualElement name="DepthMonitorFragment" class="automation-counter-fragment entity-sub-panel bg-sub-box--green">
+        <ui:Label name="Measurement" class="game-text-big automation-counter-fragment__measurement" />
+        
+        <ui:Label name="OnTitle" class="entity-panel__text game-text-normal" style="margin-top: 10px; margin-bottom: 2px; -unity-text-align: middle-center;" />
+        <ui:Label name="ThresholdOnLabel" class="game-text-big automation-counter-fragment__threshold" />
+        <cui:PreciseSlider name="ThresholdOnSlider" class="automation-counter-slider" style="margin-bottom: 10px;" />
+        
+        <ui:Label name="OffTitle" class="entity-panel__text game-text-normal" style="margin-top: 10px; margin-bottom: 2px; -unity-text-align: middle-center;" />
+        <ui:Label name="ThresholdOffLabel" class="game-text-big automation-counter-fragment__threshold" />
+        <cui:PreciseSlider name="ThresholdOffSlider" class="automation-counter-slider" />
+    </cui:NineSliceVisualElement>
+</ui:UXML>

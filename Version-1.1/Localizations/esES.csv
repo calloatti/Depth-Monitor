@@ -1,5 +1,5 @@
 ID,Text,Comment
-Building.DepthMonitor.DisplayName,"Monitor de profundidad",
-Building.DepthMonitor.Description,"Mide la profundidad del agua y envía una señal de automatización basada en un umbral bajo y alto.",
-Building.DepthMonitor.TurnOnIf,"ACTIVAR si profundidad ≤",
-Building.DepthMonitor.TurnOffIf,"DESACTIVAR si profundidad ≥",
+Building.DepthMonitor.Description,Mide la profundidad del agua y envía una señal de automatización basada en un umbral bajo y alto.,
+Building.DepthMonitor.DisplayName,Monitor de profundidad,
+Building.DepthMonitor.TurnOffIf,DESACTIVAR si profundidad ≥,
+Building.DepthMonitor.TurnOnIf,ACTIVAR si profundidad ≤,

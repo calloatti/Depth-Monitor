@@ -1,5 +1,5 @@
 ID,Text,Comment
-Building.DepthMonitor.DisplayName,"Монитор глубины",
-Building.DepthMonitor.Description,"Измеряет глубину воды и отправляет сигнал автоматизации на основе нижнего и верхнего порогов.",
-Building.DepthMonitor.TurnOnIf,"ВКЛЮЧИТЬ если глубина ≤",
-Building.DepthMonitor.TurnOffIf,"ВЫКЛЮЧИТЬ если глубина ≥",
+Building.DepthMonitor.Description,Измеряет глубину воды и отправляет сигнал автоматизации на основе нижнего и верхнего порогов.,
+Building.DepthMonitor.DisplayName,Монитор глубины,
+Building.DepthMonitor.TurnOffIf,ВЫКЛЮЧИТЬ если глубина ≥,
+Building.DepthMonitor.TurnOnIf,ВКЛЮЧИТЬ если глубина ≤,
