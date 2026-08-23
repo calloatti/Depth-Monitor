@@ -1,0 +1,6 @@
+{
+  "TemplateCollectionSpec": {
+    "CollectionId": "Buildings.Emberpelts",
+    "Blueprints#append": ["Buildings/Automation/DepthMonitor/DepthMonitor.Emberpelts.blueprint"]
+  }
+}
