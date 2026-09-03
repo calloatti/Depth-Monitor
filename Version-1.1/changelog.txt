@@ -1,3 +1,5 @@
+* Game Version: 1.1.2.4 - Mod Version: 1.0.8
+- Updated due to 1.1.2.4 release
 * Game Version: 1.1.0.0 - Mod Version: 1.0.7
 - Added Emberpelts faction support (optional dependency)
 * Game Version: 1.1.0.0 - Mod Version: 1.0.6
